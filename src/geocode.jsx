@@ -8,7 +8,7 @@ const geocodeAddress = async (address) => {
       const response = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(address)}.json`, {
         params: {
           access_token: process.env.REACT_APP_MAPBOX_API_KEY,
-          proximity: '-79.3832,43.6532', // Center search around Toronto
+          proximity: '-84.3880, 33.7490', // Center search around Toronto
         },
       });
       const { data } = response;
