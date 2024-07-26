@@ -49,7 +49,7 @@ const App = ({ jsonDataArray }) => {
       const map = new mapboxgl.Map({
         container: mapContainerRef.current,
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-79.3832, 43.6532],
+        center: [-84.3880, 33.7490],
         zoom: 14,
         attributionControl: false
       });
